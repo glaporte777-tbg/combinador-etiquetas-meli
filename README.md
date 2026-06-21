@@ -4,6 +4,16 @@ Herramienta de escritorio para combinar etiquetas PDF de Mercado Libre en hojas 
 
 ---
 
+## Descarga / Download
+
+**Windows** → [Descargar última versión (.exe)](https://github.com/glaporte777-tbg/combinador-etiquetas-meli/releases/latest)
+
+> **Aviso:** Windows puede mostrar una advertencia de seguridad al abrir el archivo por primera vez ("Windows protegió tu PC"). Esto es normal en aplicaciones sin firma digital. Para ejecutarlo: clic en **"Más información"** → **"Ejecutar de todas formas"**.
+>
+> **Note:** Windows may show a security warning the first time you open the file. This is normal for unsigned apps. To run it: click **"More info"** → **"Run anyway"**.
+
+---
+
 ## Español
 
 ### Requisitos
@@ -43,7 +53,7 @@ El programa genera un PDF con las etiquetas organizadas de a 3 por hoja A4 apais
 
 - Solo se usa la primera página de cada PDF (que es la etiqueta).
 - Si la última hoja no está completa, las etiquetas se alinean a la derecha para facilitar el corte.
-- Compatible con Windows, macOS y Linux.
+- El `.exe` es para Windows. Para macOS y Linux usá la instalación desde el código fuente (ver abajo).
 
 ---
 
@@ -86,7 +96,7 @@ The app generates a PDF with labels arranged 3 per landscape A4 page, ready to p
 
 - Only the first page of each PDF is used (which is the label itself).
 - If the last page is not full, labels are right-aligned to make cutting easier.
-- Compatible with Windows, macOS, and Linux.
+- The `.exe` is Windows only. For macOS and Linux, use the source code installation (see above).
 
 ---
 
