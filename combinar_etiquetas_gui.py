@@ -233,7 +233,7 @@ def lanzar_gui():
 
     # --- Botones secundarios ---
     barra = tk.Frame(root, bg=BG)
-    barra.pack(fill="x", padx=18)
+    barra.pack()
 
     def boton(parent, txt, cmd, primary=False):
         b = tk.Button(parent, text=txt, command=cmd, relief="flat",
@@ -262,7 +262,7 @@ def lanzar_gui():
         img.thumbnail((160, 42), Image.Resampling.LANCZOS)
         logo_img = ImageTk.PhotoImage(img)
         logo_lbl = tk.Label(root, image=logo_img, bg=BG, cursor="hand2")
-        logo_lbl.pack(pady=(0, 12))
+        logo_lbl.pack(pady=(0, 12), anchor="e", padx=18)
     except Exception:
         tk.Label(root, text="by Thunderbolt.arg", bg=BG, fg=SUB,
                  font=("Segoe UI", 8)).pack(pady=(0, 12))
