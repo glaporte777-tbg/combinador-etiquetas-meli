@@ -115,6 +115,13 @@ def lanzar_gui():
     ACCENT = "#ffe600"   # amarillo ML
     ACCENT_FG = "#1a1d24"
 
+    try:
+        import ctypes
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
+            "thunderbolt.combinador.etiquetas")
+    except Exception:
+        pass
+
     root = tk.Tk()
     root.title("Combinar Etiquetas - Mercado Libre")
     root.configure(bg=BG)
@@ -122,6 +129,8 @@ def lanzar_gui():
     root.minsize(520, 520)
     try:
         root.iconbitmap(_resource("assets/icon.ico"))
+        _icon_img = tk.PhotoImage(file=_resource("assets/icon.png"))
+        root.iconphoto(True, _icon_img)
     except Exception:
         pass
 
