@@ -6,7 +6,7 @@ Herramienta de escritorio para combinar etiquetas PDF de Mercado Libre en hojas 
 
 ## Descarga / Download
 
-**Windows** → [Descargar última versión (.exe)](https://github.com/glaporte777-tbg/combinador-etiquetas-meli/releases/latest)
+**Windows** → [Descargar última versión (.exe)](https://github.com/glaporte777-tbg/combinador-etiquetas-meli-windows/releases/latest)
 
 > **Aviso:** Windows puede mostrar una advertencia de seguridad al abrir el archivo por primera vez ("Windows protegió tu PC"). Esto es normal en aplicaciones sin firma digital. Para ejecutarlo: clic en **"Más información"** → **"Ejecutar de todas formas"**.
 >
@@ -25,8 +25,8 @@ Herramienta de escritorio para combinar etiquetas PDF de Mercado Libre en hojas 
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/Fox-TBG/combinador-etiquetas-meli.git
-cd combinador-etiquetas-meli
+git clone https://github.com/Fox-TBG/combinador-etiquetas-meli-windows.git
+cd combinador-etiquetas-meli-windows
 
 # 2. (Opcional) Crear un entorno virtual
 python -m venv venv
@@ -68,8 +68,8 @@ El programa genera un PDF con las etiquetas organizadas de a 3 por hoja A4 apais
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Fox-TBG/combinador-etiquetas-meli.git
-cd combinador-etiquetas-meli
+git clone https://github.com/Fox-TBG/combinador-etiquetas-meli-windows.git
+cd combinador-etiquetas-meli-windows
 
 # 2. (Optional) Create a virtual environment
 python -m venv venv
