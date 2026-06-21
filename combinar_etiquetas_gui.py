@@ -97,9 +97,16 @@ def procesar(entradas, salida, log=lambda *_: None):
 
 
 # ----------------------------- INTERFAZ (GUI) -----------------------------
+def _resource(nombre):
+    """Resuelve rutas de assets tanto en desarrollo como empaquetado con PyInstaller."""
+    base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base, nombre)
+
+
 def lanzar_gui():
     import tkinter as tk
     from tkinter import filedialog, messagebox
+    from PIL import Image, ImageTk
 
     BG = "#0f1115"
     CARD = "#1a1d24"
@@ -235,6 +242,17 @@ def lanzar_gui():
 
     boton(root, "Generar hoja A4", generar, primary=True).pack(pady=(0, 18),
                                                                ipadx=20)
+
+    # --- Logo Thunderbolt.arg ---
+    try:
+        img = Image.open(_resource("assets/logo.png"))
+        img.thumbnail((160, 42), Image.Resampling.LANCZOS)
+        logo_img = ImageTk.PhotoImage(img)
+        logo_lbl = tk.Label(root, image=logo_img, bg=BG, cursor="hand2")
+        logo_lbl.pack(pady=(0, 12))
+    except Exception:
+        tk.Label(root, text="by Thunderbolt.arg", bg=BG, fg=SUB,
+                 font=("Segoe UI", 8)).pack(pady=(0, 12))
 
     refrescar()
     root.mainloop()
