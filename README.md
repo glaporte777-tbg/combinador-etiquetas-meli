@@ -102,4 +102,12 @@ The app generates a PDF with labels arranged 3 per landscape A4 page, ready to p
 
 ## Licencia / License
 
-MIT © [Fox-TBG](https://github.com/Fox-TBG)
+El **código fuente** de este proyecto está bajo licencia MIT © [Fox-TBG](https://github.com/Fox-TBG) — podés usarlo, modificarlo y distribuirlo libremente.
+
+Los **logos, marcas e imágenes** de Thunderbolt.arg incluidos en este repositorio (carpeta `assets/`) son marca registrada de Thunderbolt.arg. No están cubiertos por la licencia MIT y no pueden ser usados, reproducidos ni distribuidos sin autorización expresa.
+
+---
+
+The **source code** of this project is licensed under MIT © [Fox-TBG](https://github.com/Fox-TBG) — free to use, modify, and distribute.
+
+The **logos, trademarks, and images** of Thunderbolt.arg included in this repository (`assets/` folder) are registered trademarks of Thunderbolt.arg. They are not covered by the MIT license and may not be used, reproduced, or distributed without explicit permission.
