@@ -120,6 +120,10 @@ def lanzar_gui():
     root.configure(bg=BG)
     root.geometry("560x560")
     root.minsize(520, 520)
+    try:
+        root.iconbitmap(_resource("assets/icon.ico"))
+    except Exception:
+        pass
 
     archivos = []  # rutas seleccionadas, en orden
 
